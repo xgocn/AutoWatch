@@ -51,8 +51,10 @@ let douyin = {//抖音快捷版
             sleep(1000)
             return;
         }
-        toast('等待软件打开，3s之后进入下个动作！');
-        sleep(3000);
+        var slptime=randNum(10000,20000);
+        toast('等待软件打开，'+slptime+'s之后进入下个动作！');
+        //sleep(3000);
+        sleep(slptime);
         var sleepTime = 10;
         // 统计运行次数
         var flagTime = 0;
